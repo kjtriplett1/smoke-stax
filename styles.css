@@ -1,0 +1,104 @@
+/* Make sure that padding behaves as expected */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0; 
+    background-color: rgb(201, 235, 207);   
+}
+
+/*welcome section*/
+.welcome {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 25px 30px 30px 3px black inset; 
+}
+
+.top-left>img, .top-right>img {
+    border-radius: 25px;
+    border: 5px solid rgb(60, 99, 67);
+}
+
+.top-left {
+    flex: 20%;  
+}
+
+.top-middle {
+    flex: 60%;
+    text-align: center;
+}
+
+.top-right {
+    flex: 20%;
+}
+
+/*javascript moving banner*/
+#marquee {
+    color: rgb(201, 235, 207);
+    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgb(60, 99, 67); 
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: 15px 10px 30px 3px black inset;
+}
+
+/*bubble message area*/
+.messages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    box-shadow: 25px 20px 30px 3px black inset;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.message {
+    flex: 25%;
+    padding: 5px;    
+}
+
+
+.messages img {
+    padding: 5px;
+    border-radius: 100px;
+    border: 5px solid rgb(60, 99, 67); 
+    animation: bling 2s infinite; /*@keyframes named bling*/
+}
+
+/*picture list of items*/
+.items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 25px 30px 30px 3px black inset; 
+}
+
+.item {
+    flex: 25%;
+    padding: 5px;  
+    
+}
+
+.items img {
+    border-radius: 10px;
+    border: 5px solid rgb(60, 99, 67); 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*animation for bubble messages*/
+@keyframes bling {
+    50% {box-shadow: 200px 200px 30px 3px black inset;}
+}
