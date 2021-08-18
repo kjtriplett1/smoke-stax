@@ -52,11 +52,9 @@ body {
 .messages {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 10px;
     box-shadow: 25px 20px 30px 3px black inset;
-    justify-content: space-around;
-    align-items: center; 
 }
 
 .message {
@@ -102,3 +100,9 @@ img {
 @keyframes bling {
     50% {box-shadow: 200px 200px 30px 3px black inset;}
 }
+
+@media (max-width: 600px) {
+    .message {
+      flex: 50%;
+    }
+  }
