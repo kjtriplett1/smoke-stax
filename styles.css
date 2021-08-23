@@ -4,30 +4,9 @@
 }
 
 body {
-    margin: 0; 
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     background-color: rgb(201, 235, 207);   
-}
-
-/*welcome section*/
-.welcome {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 10px;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 25px 30px 30px 3px black inset; 
-}
-
-.top-left>img, .top-right>img {
-    border-radius: 15px;
-    border: 5px solid rgb(60, 99, 67);
-    background-color: rgb(60, 99, 67);
-}
-
-.top-middle {
-    
-    text-align: center;
 }
 
 /*javascript moving banner*/
@@ -42,6 +21,29 @@ body {
     box-shadow: 15px 10px 30px 3px black inset;
 }
 
+/*welcome section*/
+.welcome {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 30px 30px 30px 3px black inset; 
+}
+
+.top-left>img, .top-right>img {
+   
+    border-radius: 15px;
+    border: 5px solid rgb(11, 221, 134); 
+    background-color: rgb(11, 221, 134);
+}
+
+.top-middle {
+    text-align: center;
+    color: rgb(3, 0, 0);;
+}
+
 /*bubble message area*/
 .messages {
     display: flex;
@@ -51,14 +53,14 @@ body {
     background-color: rgb(186, 235, 195);  
     justify-content: space-around;
     align-items: center;
-    box-shadow: 25px 30px 30px 3px black inset;
+    box-shadow: 20px 10px 30px 3px black inset;
 }
 
 .message img {
-    padding: 5px;
+    padding: 2px;
     border-radius: 100px;
-    border: 5px solid rgb(60, 99, 67); 
-    background-color: rgb(60, 99, 67);
+    border: 3px solid rgb(11, 221, 134);
+    background-color: rgb(201, 235, 207);
     animation: bling 2s infinite; /*@keyframes named bling*/
 }
 
@@ -71,7 +73,7 @@ body {
     align-items: center;
     padding: 10px;
     background-color: rgb(167, 209, 175);  
-    box-shadow: 25px 30px 30px 3px black inset; 
+    box-shadow: 20px 10px 40px 10px black inset; 
 }
 
 .item {
@@ -81,16 +83,19 @@ body {
 }
 
 .items img {
-    border-radius: 10px;
-    border: 5px solid rgb(60, 99, 67); 
+    border-radius: 15px;
+    border: 3px solid rgb(11, 221, 134); 
     background-color: rgb(60, 99, 67);
 }
 
 .come {
     text-align: center;
     color: white;
-    background-color: rgb(164, 199, 173);  
-    box-shadow: 25px 30px 30px 3px black inset;
+    padding: 2px;
+    background-color: rgb(164, 199, 173);
+    border: 2px solid white; 
+    box-shadow: 20px 15px 40px 5px rgb(0, 0, 0) inset;
+    animation: bling 2s infinite; /*@keyframes named bling*/
 }
 
 footer {
@@ -101,12 +106,12 @@ footer {
     background-color: rgb(136, 172, 143);
     justify-content: space-around;
     align-items: center;
-    box-shadow: 25px 30px 30px 3px black inset;
+    box-shadow: 20px 20px 60px 10px black inset;
 }
 
 .amazing {
     text-align: center;
-    color: white;
+    color: rgb(3, 0, 0);
     font-size: large;
 }
 
@@ -115,7 +120,8 @@ footer {
 }
 
 footer img {
-    border-radius: 10px;
+    border-radius: 15px;
+    border: 5px solid rgb(11, 221, 134);
 }
 
 img {
@@ -129,14 +135,8 @@ img {
 }
 
 @media only screen and (max-width: 610px) {
-    .top-left, .top-right {
-        flex: 25%;
-    }
-  }
-
-  @media only screen and (max-width: 610px) {
-    .top-middle {
-        flex: 50%;
+    .welcome {
+        flex-direction: column;
     }
   }
 
