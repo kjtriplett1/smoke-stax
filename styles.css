@@ -8,19 +8,20 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
 }
 
+/*top welcome header*/
 .header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color: rgb(167, 209, 175);
-    box-shadow: 10px 10px 30px 3px black inset;
+    background-color: black;
+    box-shadow: 7px -7px 20px 3px rgb(167, 209, 175) inset;
 }
 
 .welcome {
     flex: 100%;
     height: 100px;
     text-align: center;
-    color: black;
+    color: white;
     font-weight: bolder;
     font-size: x-large;
     padding-top: 35px;
@@ -32,7 +33,8 @@ body {
     width: 100%;
     font-size: xx-large;
     text-align: center;
-    border: 3px solid white;
+    border: 5px solid white;
+    border-radius: 10px;
     background-color: rgb(167, 209, 175); 
     white-space: nowrap;
     overflow: hidden;
@@ -68,7 +70,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 10px;
-    border: 3px solid white;
+    border: 5px solid white;
     background-color: rgb(167, 209, 175);  
     justify-content: space-around;
     align-items: center;
@@ -95,28 +97,41 @@ body {
     box-shadow: 10px 20px 30px 3px black inset; 
 }
 
+.items2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(167, 209, 175);  
+    box-shadow: 10px -20px 30px 3px black inset; 
+}
 .item {
     flex: 25%;
     padding: 5px;  
     
 }
 
-.items img {
+.items img, .items2 img {
     border-radius: 15px;
     border: 3px solid white; 
-    background-color: rgb(60, 99, 67);
+    
 }
 
+/*come see us*/
 .come {
     text-align: center;
     color: white;
     padding: 2px;
     background-color: rgb(167, 209, 175);
-    border: 3px solid white; 
+    border: 5px solid white;
+    border-radius: 10px; 
     box-shadow: 20px 15px 40px 5px rgb(0, 0, 0) inset;
     animation: bling 2s infinite; /*@keyframes named bling*/
 }
 
+/*footer area*/
 footer {
     display: flex;
     flex-direction: row;
@@ -154,6 +169,7 @@ img {
     50% {box-shadow: 200px 200px 30px 3px black inset;}
 }
 
+/*make smokeshop/vapeshop pics column for small screens*/
 @media only screen and (max-width: 610px) {
     .info {
         flex-direction: column;
