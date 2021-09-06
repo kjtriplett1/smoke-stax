@@ -131,8 +131,8 @@ body {
     animation: bling 2s infinite; /*@keyframes named bling*/
 }
 
-/*footer area*/
-footer {
+/*double logo area*/
+.logos {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -154,9 +154,15 @@ footer {
     padding: 5px;
 }
 
-footer img {
+.logos img {
     border-radius: 15px;
     border: 5px solid white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 
 img {
